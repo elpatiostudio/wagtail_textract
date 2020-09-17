@@ -40,13 +40,15 @@ but also in a public-facing search view, for which we provide a code example.
 
 We have been using this package in production since August 2018 on https://nuffic.nl.
 
+### Setup
+- Add `wagtail_textract` in INSTALLED_APPS
+- Put `WAGTAILDOCS_DOCUMENT_MODEL = "wagtail_textract.document"` in your Django settings.
+
+Run `./manage.py migrate wagtail_textract`
 
 ## Installation
 
 - Install the [Textract dependencies][8]
-- Add `wagtail_textract` to your requirements and/or `pip install wagtail_textract`
-- Add to your Django `INSTALLED_APPS`.
-- Put `WAGTAILDOCS_DOCUMENT_MODEL = "wagtail_textract.document"` in your Django settings.
 
 Note: You'll get an incompatibility warning during installation of wagtail_textract (Wagtail 2.0.1 installed):
 
